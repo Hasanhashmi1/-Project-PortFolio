@@ -40,3 +40,19 @@ changeText();
 
 // Set interval to call changeText every 5 seconds (adjust as needed)
 setInterval(changeText, 5000);
+
+
+
+
+
+
+
+var colY = document.getElementById("scrollToTopButton");
+
+colY.addEventListener("click", function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Add smooth scrolling behavior
+  });
+});
+

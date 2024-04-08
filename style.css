@@ -341,10 +341,10 @@ html {
 }
 
 .skillshowcasing {
-    margin-top: 10em;
+    margin-top: 5em;
     width: 100%;
     display: grid;
-    height: 70vh;
+    height: 60vh;
     gap: 3em;
     margin-bottom: 10em;
 }
@@ -354,20 +354,24 @@ html {
     font-size: 25px;
     display: flex;
     justify-content: flex-end;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .head h1 span {
     color: #EB4A4A;
     font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .undercontents {
-    width: 100%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5em;
+    gap: 2em;
     grid-auto-rows: minmax(100px, auto);
     justify-items: end;
     align-items: center;
@@ -604,8 +608,10 @@ html {
 .project-collection {
     width: 100%;
     display: flex;
-    margin-top: 5em;
+    margin-top: 10em;
     gap: 5em;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .frames-section {
@@ -615,7 +621,7 @@ html {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-left: 2em;
+   
 }
 
 .frames-section iframe {
@@ -668,11 +674,13 @@ html {
     min-width: fit-content;
     min-height: fit-content;
 }
-.myButton i img{
+
+.myButton i img {
     width: 20px;
     height: 20px;
 }
-.myButton:hover{
+
+.myButton:hover {
     box-shadow: 0px 0px 0px 0px white;
     color: white;
     border: none;
