@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+.nav-main {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    min-width: fit-content;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav {
+    width: 100%;
+
+    padding-top: 5vh;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.main-nav ul li {
+    list-style: none;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    /* color: white; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.active-a {
+    color: #EB4A4A;
+    font-weight: bold;
+}
+
+.left-a {
+    color: white;
+}
+
+/* Style for red color */
+.red {
+    background-color: #EB4A4A;
+    color: white;
+
+}
+
+/* Style for white color */
+/* .white {
+    color: white;
+  } */
+
+.grid-layout {
+    width: 100%;
+    display: flex;
+    /* background-color: black; */
+    color: white;
+    height: 90vh;
+    min-width: fit-content;
+}
+
+.full {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.leftside-layout {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.onlyheading {
+    width: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+.onlyheading h3 {
+    font-size: 26.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.onlyheading h1 {
+    font-size: 76.7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+.onlyheading h2 {
+    font-size: 30.2px;
+    color: #EB4A4A;
+    border: none;
+}
+
+/* Your CSS styles can go here */
+
+/* Cursor animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.2em;
+    height: 1em;
+    animation: blink 1s infinite;
+}
+
+
+
+
+
+
+
+.para {
+    width: 100%;
+    font-size: 16.5px;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+.btns {
+    display: flex;
+    width: 70%;
+    gap: 1.5rem;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+.btns a {
+    cursor: unset;
+}
+
+.btns button {
+    width: 18vb;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* second section of my intro page */
+.half {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.imagecontainer video {
+    width: 100vb;
+    height: 70vh;
+}
+
+
+
+
+
+
+.justification {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 2em;
+    width: 100%;
+    align-items: start;
+    justify-items: center;
+    height: 90vh;
+}
+
+.imageholder {
+    grid-column: 1 / 1;
+    grid-row: 1/5;
+}
+
+.imageholder img {
+    width: 60vb;
+    /* height: 90vh; */
+    border-radius: 20px;
+}
+
+.headings {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.headings {
+    width: 100%;
+    line-height: 1;
+
+}
+
+.im {
+    font-size: 25.7px;
+    color: #EB4A4A;
+    line-height: 1;
+}
+
+.hasan {
+    font-size: 65.7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraphs {
+    width: 72%;
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.paragraph {
+    font-size: 28.6px;
+    text-align: justify;
+}
+
+.random {
+    width: 100%;
+    display: flex;
+    row-gap: 2em;
+    flex-direction: column;
+}
+
+.key {
+    display: grid;
+}
+
+.key h3 {
+    color: #EB4A4A;
+    font-size: 24.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skillList {
+    margin-left: 1em;
+    column-gap: 5em;
+    font-size: 20px;
+    text-align: justify;
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#fade-in-section {
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+    /* Animation lasts for 1 second */
+}
+
+/* #fade-in-section2{
+    opacity: 0;
+    animation: game-in 2s ease-in-out forwards;
+}
+@keyframes game-in{
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(10%);
+        opacity: 1;
+    }
+} */
+.metalogos {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidelogos {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidelogos a {
+    text-decoration: none;
+}
+
+.sidelogos a img {
+    width: 4vb;
+    height: 4vh;
+}
+
+.skillshowcasing {
+    width: 100%;
+
+    display: grid;
+    gap: 3em;
+}
+
+.head {
+    width: 46%;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head h1 span {
+    color: #EB4A4A;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.undercontents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: end;
+    align-items: center;
+}
+
+
+
+.one img {
+    width: 20vb;
+    height: 20vh;
+
+}
+
+.two img {
+    width: 17vb;
+    height: 17vh;
+}
+
+.three img {
+    width: 20vb;
+    height: 20vh;
+}
+
+.fourth img {
+    width: 20vb;
+    height: 20vh;
+    border: none;
+    border-radius: 25px;
+}
+
+.fifth img {
+    width: 20vb;
+    height: 20vh;
+
+}
+
+.sixth img {
+    width: 20vb;
+    height: 20vh;
+
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.one {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.fourth {
+    grid-column: 3;
+    grid-row: 1;
+
+}
+
+.fifth {
+    grid-column: 1;
+
+    grid-row: 2;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.sixth {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.project-showcase {
+    width: 100%;
+    height: 90vh;
+
+}
