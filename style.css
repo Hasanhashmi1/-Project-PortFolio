@@ -38,7 +38,8 @@ html {
     text-decoration: none;
     font-size: 22px;
     /* color: white; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .active-a {
@@ -93,7 +94,8 @@ html {
 
 .onlyheading h3 {
     font-size: 26.3px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .onlyheading h1 {
@@ -105,7 +107,9 @@ html {
 .onlyheading h2 {
     font-size: 30.2px;
     color: #EB4A4A;
-    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Your CSS styles can go here */
@@ -143,6 +147,9 @@ html {
     font-size: 16.5px;
     min-width: fit-content;
     min-height: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .btns {
@@ -189,7 +196,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    row-gap: 2em;
+
     width: 100%;
     align-items: start;
     justify-items: center;
@@ -221,12 +228,16 @@ html {
 .im {
     font-size: 25.7px;
     color: #EB4A4A;
-    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hasan {
     font-size: 65.7px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .paragraphs {
@@ -236,8 +247,11 @@ html {
 }
 
 .paragraph {
-    font-size: 28.6px;
+    font-size: 19.5px;
     text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+
 }
 
 .random {
@@ -327,10 +341,12 @@ html {
 }
 
 .skillshowcasing {
+    margin-top: 10em;
     width: 100%;
-
     display: grid;
+    height: 70vh;
     gap: 3em;
+    margin-bottom: 10em;
 }
 
 .head {
@@ -426,8 +442,241 @@ html {
     grid-row: 2;
 }
 
-.project-showcase {
-    width: 100%;
-    height: 90vh;
 
+
+/* This is fonts section */
+.zen-dots-regular {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* End of font section */
+.project-showcase {
+    margin-top: 5em;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.project-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-heading h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+
+.project-para h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.project-para h3 span {
+    color: #EB4A4A;
+
+}
+
+.project-collection {
+    width: 100%;
+    display: flex;
+    margin-top: 5em;
+    gap: 5em;
+}
+
+.frames-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 2em;
+}
+
+.frames-section iframe {
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    height: 70vh;
+}
+
+.project-para {
+    width: 30%;
+    display: flex;
+    gap: 2em;
+
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.main-paragraph {
+    font-size: 18.5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.project-para a {
+    text-decoration: none;
+    cursor: unset;
+}
+
+.myButton {
+    width: 18vb;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 22px;
+    border: 1px solid white;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-family: "Zen Dots", sans-serif;
+    color: #EB4A4A;
+    font-weight: 400;
+}
+
+.lowbtns {
+    display: flex;
+    width: 70%;
+    gap: 1.5rem;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+.myButton i img{
+    width: 20px;
+    height: 20px;
+}
+.myButton:hover{
+    box-shadow: 0px 0px 0px 0px white;
+    color: white;
+    border: none;
+    background-color: #EB4A4A;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
 }

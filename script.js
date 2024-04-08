@@ -2,8 +2,7 @@
 var texts = [
   "-Web Developer",
   "-Frontend Developer",
-  "-Digital Marketer",
-  
+  "-Digital Marketer"
 ];
 
 // Index to track current text
