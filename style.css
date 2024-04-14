@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,19 +10,22 @@ html {
 }
 
 .nav-main {
+    background-color: black;
     height: 10vh;
     width: 100%;
     display: flex;
     min-width: fit-content;
-    /* background-color: black; */
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
 .main-nav {
     width: 100%;
+    position: fixed;
+    z-index: 9999;
+    padding: 2em 0em 1em 0em;
+    background-color: black;
 
-    padding-top: 5vh;
 }
 
 .main-nav ul {
@@ -34,22 +38,23 @@ html {
     list-style: none;
 }
 
-.main-nav ul li a {
+.main-nav ul li{
     text-decoration: none;
     font-size: 22px;
     /* color: white; */
     font-family: "Poppins", sans-serif;
-
+    cursor: pointer;
 }
 
 .active-a {
     color: #EB4A4A;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: 22px;
 }
 
-.left-a {
-    color: white;
-}
+
 
 /* Style for red color */
 .red {
@@ -196,7 +201,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-
+    padding: 6em 0em 4em 0em;
     width: 100%;
     align-items: start;
     justify-items: center;
@@ -204,13 +209,17 @@ html {
 }
 
 .imageholder {
-    grid-column: 1 / 1;
-    grid-row: 1/5;
+    display: flex;
+    width: 100%;
+    /* grid-column: 1 / 1; */
+    /* grid-row: 1 / 5; */
+    justify-content: center;
+    align-items: flex-start;
+    min-width: fit-content;
 }
 
 .imageholder img {
-    width: 60vb;
-    /* height: 90vh; */
+    height: 85vh;
     border-radius: 20px;
 }
 
@@ -341,12 +350,12 @@ html {
 }
 
 .skillshowcasing {
-    margin-top: 5em;
+    padding: 2em 0em 2em 0em;
     width: 100%;
     display: grid;
     height: 60vh;
     gap: 3em;
-    margin-bottom: 10em;
+    margin-top: 5em;
 }
 
 .head {
@@ -368,7 +377,7 @@ html {
 }
 
 .undercontents {
-    width: 85%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
@@ -571,9 +580,11 @@ html {
 
 /* End of font section */
 .project-showcase {
-    margin-top: 5em;
-    width: 100%;
-    height: 100%;
+        /* margin-top: 5em; */
+        width: 100%;
+        height: 100%;
+        padding-top: 6em;
+    
 
 }
 
@@ -608,7 +619,7 @@ html {
 .project-collection {
     width: 100%;
     display: flex;
-    margin-top: 10em;
+    margin-top: 5em;
     gap: 5em;
     justify-content: center;
     align-items: flex-start;
@@ -688,3 +699,9 @@ html {
     font-weight: 400;
     transition: all 0.2s ease-in-out;
 }
+.containingEverything{
+    width: 100%;
+    display: contents;
+}
+
+
