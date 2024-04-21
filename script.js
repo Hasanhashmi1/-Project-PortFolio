@@ -64,34 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // var whatIsHeading = document.getElementById("headingProjects");
   // var isActive = false;
   const navLinks = document.querySelectorAll(".nav-link");
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     function setActiveLink(clickedLink) {
         navLinks.forEach(link => {
             link.classList.toggle("active-a", link === clickedLink);
@@ -128,6 +100,76 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 });
+
+
+function exNavbar(){
+  var positionCurrent = window.scrollY;
+
+  var myNavbar = {
+    top: document.getElementById("fade-in-section").offsetTop,
+    height: document.getElementById("fade-in-section").clientHeight
+  }
+  var myAboutSection = {
+    top: document.getElementById("fade-in-section2").offsetTop,
+    height: document.getElementById("fade-in-section2").clientHeight
+  }
+  var myProjectSection = {
+    top: document.getElementById("myProjects").offsetTop,
+    height: document.getElementById("myProjects").clientHeight
+  }
+
+
+  var buttonOfFirstSection = document.getElementById("nav1");
+  var buttonOfMySection = document.getElementById("aboutLink");
+  var buttonOfProjectList = document.getElementById("projectList");
+
+
+  if (positionCurrent >= myNavbar.top && positionCurrent < (myNavbar.top + myNavbar.height)) {
+    buttonOfFirstSection.classList.add("active-a");
+    buttonOfMySection.classList.remove("active-a");
+    buttonOfProjectList.classList.remove("active-a");
+  } 
+  else if (positionCurrent >= myAboutSection.top && positionCurrent < (myAboutSection.top + myAboutSection.height)) {
+    buttonOfFirstSection.classList.remove("active-a");
+    buttonOfMySection.classList.add("active-a");
+    buttonOfProjectList.classList.remove("active-a");
+  }
+  else if (positionCurrent >= myProjectSection && positionCurrent < (myProjectSection.top + myProjectSection.height)){
+    buttonOfFirstSection.classList.remove("active-a");
+    buttonOfMySection.classList.remove("active-a");
+    buttonOfProjectList.classList.add("active-a");
+  }
+  
+  
+
+}
+window.addEventListener("scroll", exNavbar);
+exNavbar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
