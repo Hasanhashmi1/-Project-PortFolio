@@ -46,6 +46,14 @@ setInterval(changeText, 5000);
 
 
 
+
+
+
+
+
+
+
+
 // Here I'm going to create a scrollto funtion which will scroll to a perticular div
 document.addEventListener("DOMContentLoaded", () => {
   var aboutLink = document.getElementById("aboutLink");
@@ -56,6 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
   // var whatIsHeading = document.getElementById("headingProjects");
   // var isActive = false;
   const navLinks = document.querySelectorAll(".nav-link");
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     function setActiveLink(clickedLink) {
         navLinks.forEach(link => {
@@ -93,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 });
-
 
 
 
