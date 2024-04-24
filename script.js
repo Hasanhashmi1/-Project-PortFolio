@@ -41,7 +41,43 @@ changeText();
 // Set interval to call changeText every 5 seconds (adjust as needed)
 setInterval(changeText, 5000);
 
+// mobile version
+var phrases = [
+  "-Web Developer",
+  "-Frontend Developer",
+  "-Digital Marketer"
+];
 
+var currentPhraseIndex = 0;
+
+function changePhrase() {
+  var teraBox = document.getElementById("teraBox");
+  var currentPhrase = phrases[currentPhraseIndex];
+
+  teraBox.textContent = "";
+
+  var letterIndex = 0;
+  var typingInterval = setInterval(function () {
+    teraBox.textContent += currentPhrase[letterIndex];
+    letterIndex++;
+
+    if (letterIndex >= currentPhrase.length) {
+      clearInterval(typingInterval);
+    }
+  }, 100);
+
+  currentPhraseIndex++;
+  if (currentPhraseIndex >= phrases.length) {
+    currentPhraseIndex = 0;
+  }
+}
+
+changePhrase();
+
+setInterval(changePhrase, 5000);
+
+
+// mobile version end
 
 
 
@@ -106,7 +142,7 @@ function exNavbar(){
   var positionCurrent = window.scrollY;
 
   var myNavbar = {
-    top: document.getElementById("fade-in-section").offsetTop,
+    top: 0,
     height: document.getElementById("fade-in-section").clientHeight
   }
   var myAboutSection = {
@@ -134,7 +170,7 @@ function exNavbar(){
     buttonOfMySection.classList.add("active-a");
     buttonOfProjectList.classList.remove("active-a");
   }
-  else if (positionCurrent >= myProjectSection && positionCurrent < (myProjectSection.top + myProjectSection.height)){
+ else if(positionCurrent >= myProjectSection.top && positionCurrent < (myAboutSection.top + myProjectSection.height)){
     buttonOfFirstSection.classList.remove("active-a");
     buttonOfMySection.classList.remove("active-a");
     buttonOfProjectList.classList.add("active-a");
