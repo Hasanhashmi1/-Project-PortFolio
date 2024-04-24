@@ -77,6 +77,56 @@ changePhrase();
 setInterval(changePhrase, 5000);
 
 
+var burgMan = document.getElementById("hamburgerIcon");
+let isActive = false;
+
+function autoAdjust() {
+    // X formation 
+    var firstLine = document.querySelector("#hamburgerIcon .line11");
+    var secondLine = document.querySelector("#hamburgerIcon .line12");
+    var thirdLine = document.querySelector("#hamburgerIcon .line13");
+    firstLine.style.transform = "translateY(7px) rotate(45deg)";
+    secondLine.style.opacity = "0";
+    thirdLine.style.transform = "translateY(-7px) rotate(-45deg)";
+}
+
+function backNormal() {
+    // hamburger Formation
+    var firstLine = document.querySelector("#hamburgerIcon .line11");
+    var secondLine = document.querySelector("#hamburgerIcon .line12");
+    var thirdLine = document.querySelector("#hamburgerIcon .line13");
+    firstLine.style.transform = "translateY(0px) rotate(0deg)";
+    secondLine.style.opacity = "1";
+    thirdLine.style.transform = "translateY(0px) rotate(0deg)";
+}
+
+burgMan.addEventListener("click", () => {
+  alert("Work is in progress! " + "Soon hamburger Menu will work.");
+    // if (!isActive) {
+    //     autoAdjust();
+    //     alert("Work is in progress! " + "Soon hamburger Menu will work.");
+    // } else {
+    //     backNormal();
+    //     alert("Work is in progress! " + "Soon hamburger Menu will work.");
+    // }
+    // isActive = !isActive;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // mobile version end
 
 
