@@ -211,17 +211,14 @@ html {
     width: 100%;
     align-items: start;
     justify-items: center;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .imageholder {
     display: flex;
     width: 100%;
-    /* grid-column: 1 / 1; */
-    /* grid-row: 1 / 5; */
     justify-content: center;
     align-items: flex-start;
-    min-width: fit-content;
 }
 
 .imageholder img {
@@ -718,8 +715,8 @@ html {
 
 /* responsive  Here👇 */
 /* Styles applied when viewport width is between 768px and 1200px */
-/* large laptops  */
-@media (min-width:1051px) and (max-width:1440px) {
+
+@media (min-width:1051px) and (max-width:1440px) { /* large laptops  */
     .skillshowcasing {
         margin: 20em 0em 5em 0em;
         width: 100%;
@@ -729,8 +726,8 @@ html {
         
     }
     .imagecontainer{
-        width: 86.5vb;
-        height: 70vh;
+        width: 100%;
+        height: 100%;
     }
     .half {
         width: 50%;
@@ -758,48 +755,112 @@ html {
         align-items: center;
     }
     .leftside-layout {
-        width: 62%;
+        width: 65%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
+    .onlyheading h3 {
+        font-size: 22px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+    .onlyheading h1 {
+        font-size: 64px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1;
+    }
+
+    .onlyheading h2 {
+        font-size: 25px;
+        color: #EB4A4A;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
 
+    .imageholder img {
+        width: 60vb;
+        height: 100vh;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .hasan {
+        font-size: 64.7px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .paragraphs {
+        width: 86%;
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+    .paragraph {
+        font-size: 18px;
+        text-align: justify;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+    }
 
+    .skillList {
+        margin-left: 1em;
+        column-gap: 5em;
+        font-size: 14px;
+        width: 86%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .containingEverything{
+        width: 100%;
+        height: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+    .justification {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        padding: 6em 0em 4em 0em;
+        width: 100%;
+        align-items: start;
+        justify-items: center;
+        /* height: 90vh; */
+    }
+    .para {
+        width: 100%;
+        font-size: 16.5px;
+        min-width: fit-content;
+        min-height: fit-content;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-align: justify;
+    }
+    .project-para h3 {
+        font-family: "Zen Dots", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+    }
+    .main-paragraph {
+        font-size: 16.5px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .imageholder {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
     
-    
+
 
 
 
