@@ -717,6 +717,14 @@ html {
 /* Styles applied when viewport width is between 768px and 1200px */
 
 @media (min-width:1051px) and (max-width:1440px) { /* large laptops  */
+
+
+    
+
+
+
+
+
     .skillshowcasing {
         margin: 20em 0em 5em 0em;
         width: 100%;
@@ -1196,6 +1204,9 @@ html {
 
 /* TABLET RESPONSIVE */
 @media(min-width: 768px) and (max-width: 1024px) {
+    .Pc-footer{
+        display: none;
+    }
     .main-nav ul li {
         text-decoration: none;
         font-size: 20px;
@@ -1409,6 +1420,10 @@ html {
 
 /* mobile */
 @media (max-width:767px) {
+
+    .Pc-footer{
+        display: none;
+    }
 
     .projectTiles{
         display: block;
@@ -1816,7 +1831,7 @@ html {
 
 
 
-footer {
+.Pc-footer {
     color: white;
     padding: 4em 0em 2em 0em;
     font-family: Arial, sans-serif;
