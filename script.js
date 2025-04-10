@@ -229,6 +229,35 @@ function exNavbar(){
   
 
 }
+
+const blocked = document.getElementById("blocked");
+
+  blocked.addEventListener('click', (e)=>{
+    e.preventDefault();
+  });
+const blockedTwo = document.getElementById("blockedTwo");
+
+  blockedTwo.addEventListener('click', (e)=>{
+    e.preventDefault();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener("scroll", exNavbar);
 exNavbar();
 

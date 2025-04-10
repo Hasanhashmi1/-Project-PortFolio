@@ -654,7 +654,9 @@ html {
     flex-direction: column;
 
 }
-
+.blocked{
+    cursor: not-allowed !important;
+}
 .main-paragraph {
     font-size: 18.5px;
     font-family: "Poppins", sans-serif;
@@ -668,7 +670,7 @@ html {
 }
 
 .myButton {
-    width: 18vb;
+    width: 25vb;
     height: 5vh;
     border-radius: 5px;
     font-size: 22px;
@@ -1022,6 +1024,11 @@ html {
 }
 
 @media (max-width:1050px) {
+    .halfSide img{
+        width: 51vb;
+        height: 40vh;
+        object-fit: contain;
+    }
     .full {
         width: 50%;
         display: flex;
@@ -1176,7 +1183,7 @@ html {
     }
 
     .myButton {
-        width: 16vb;
+        width: 25vb;
         height: 5vh;
         border-radius: 5px;
         font-size: 20px;
@@ -1204,6 +1211,7 @@ html {
 
 /* TABLET RESPONSIVE */
 @media(min-width: 768px) and (max-width: 1024px) {
+
     .Pc-footer{
         display: none;
     }
@@ -1393,7 +1401,11 @@ html {
         font-weight: 300;
         text-align: justify;
     }
-
+    .frames-section img {
+        width: 26em !important;
+        height: 26em !important;
+        object-fit: fill;
+    }
 
 }
 
@@ -1823,7 +1835,11 @@ html {
 
 
 
-
+.frames-section img{
+    width: 58em;
+    height: 40em;
+    object-fit: fill;
+}
 
 
 
