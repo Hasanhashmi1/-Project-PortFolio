@@ -1024,7 +1024,7 @@ html {
 }
 
 @media (max-width:1050px) {
-    .halfSide img{
+    .halfSideImage{
         width: 51vb;
         height: 40vh;
         object-fit: contain;
@@ -1401,7 +1401,7 @@ html {
         font-weight: 300;
         text-align: justify;
     }
-    .frames-section img {
+    .dashboardImage {
         width: 26em !important;
         height: 26em !important;
         object-fit: fill;
@@ -1835,7 +1835,7 @@ html {
 
 
 
-.frames-section img{
+.dashboardImage{
     width: 58em;
     height: 40em;
     object-fit: fill;
